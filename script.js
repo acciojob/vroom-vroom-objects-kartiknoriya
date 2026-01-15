@@ -17,8 +17,8 @@ SportsCar.prototype = Object.create(Car.prototype);
 SportsCar.prototype.constructor = SportsCar;
 
 SportsCar.prototype.getTopSpeed = function(){
-    return (`${this.topSpeed}`)
-}
+    return this.topSpeed;
+};
 const car = new SportsCar("Ferrari", "Testarossa", 200);
 
 // Call getMakeModel() to get the make and model of the car
